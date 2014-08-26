@@ -1,0 +1,166 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "53736b375939dcf68091f6ecd547551f",
+    "packages": [
+        {
+            "name": "digitalnature/php-ref",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digitalnature/php-ref.git",
+                "reference": "1b7436fb5a2ef5bf38c56fb20c2871a0cfc76f3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digitalnature/php-ref/zipball/1b7436fb5a2ef5bf38c56fb20c2871a0cfc76f3d",
+                "reference": "1b7436fb5a2ef5bf38c56fb20c2871a0cfc76f3d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "ref.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A nicer print_r/var_dump alternative for PHP 5.3+",
+            "homepage": "https://github.com/digitalnature/php-ref",
+            "keywords": [
+                "debug",
+                "var_dump"
+            ],
+            "time": "2014-03-31 16:40:13"
+        },
+        {
+            "name": "oodle/krumo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oodle/krumo.git",
+                "reference": "81b834712de6f2a7a38349f7720f4470bede27dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oodle/krumo/zipball/81b834712de6f2a7a38349f7720f4470bede27dc",
+                "reference": "81b834712de6f2a7a38349f7720f4470bede27dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.17"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "class.krumo.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Kaloyan K. Tsvetkov",
+                    "email": "kaloyan@kaloyan.info"
+                },
+                {
+                    "name": "Matthew J. Mucklo",
+                    "email": "mmucklo@corp.oodle.com"
+                },
+                {
+                    "name": "Stefan Thomas",
+                    "email": "moon@justmoon.de"
+                }
+            ],
+            "description": "KRUMO - version 2.0 of print_r(); and var_dump(); (with new updates)",
+            "keywords": [
+                "debug",
+                "debugging",
+                "krumo",
+                "pretty",
+                "print",
+                "print_r",
+                "var_dump"
+            ],
+            "time": "2014-05-13 17:37:35"
+        },
+        {
+            "name": "raveren/kint",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/raveren/kint.git",
+                "reference": "d4780fc6e974f00c427c1fd2492dca4dcd636704"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/raveren/kint/zipball/d4780fc6e974f00c427c1fd2492dca4dcd636704",
+                "reference": "d4780fc6e974f00c427c1fd2492dca4dcd636704",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Kint.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rokas Šleinius",
+                    "homepage": "https://github.com/raveren"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/raveren/kint/contributors"
+                }
+            ],
+            "description": "Kint - debugging helper for PHP developers",
+            "homepage": "https://github.com/raveren/kint",
+            "keywords": [
+                "debug",
+                "kint",
+                "php"
+            ],
+            "time": "2014-08-11 11:44:51"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "raveren/kint": 20,
+        "digitalnature/php-ref": 20,
+        "oodle/krumo": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

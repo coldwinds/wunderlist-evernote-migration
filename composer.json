@@ -1,0 +1,11 @@
+{
+	"require-dev": {
+		"raveren/kint": "dev-master",
+		"oodle/krumo": "dev-master"
+	},
+	"autoload": {
+		"psr-0": {
+			"Kaf\\": "lib"
+		}
+	}
+}

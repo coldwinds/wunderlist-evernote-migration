@@ -13,6 +13,7 @@ use Kaf\WunderlistToEvernoteMigration20140825\Migrate;
 $m = new Migrate(array(
 	'wunderlist' => new WunderlistJsonReader($c['wunderlist']),
 	'evernote' => new EvernoteEnexWriter($c['evernote']),
+	'codePage' => $c['migrate']['codePage'],
 ));
 
 $m->process();

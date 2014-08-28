@@ -27,4 +27,10 @@ class Support{
 		return $new;
 	}
 
+	public function htmlSpecialChars($input){
+		$callback = array($this, __FUNCTION__);
+
+		return is_array($input) ? array_map($callback, $input) : htmlspecialchars($input);
+	}
+
 }

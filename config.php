@@ -6,4 +6,7 @@ return array(
 	'evernote' => array(
 		'savePath' => __DIR__.'/io/output',
 	),
+	'migrate' => array(
+		'codePage' => 'GBK',	//set you windows system code page for filename encoding
+	),
 );

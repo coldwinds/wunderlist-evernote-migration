@@ -28,7 +28,7 @@ class EvernoteEnexWriter extends Support{
 	public function buildNote($note = array()){
 		$tpl = '<note><title>%s</title><content>%s</content><created>%s</created><updated>%s</updated></note>';
 
-		return sprintf($tpl, htmlentities($note['title'], ENT_QUOTES, 'UTF-8'), $this->buildNoteContent($note['content']), $note['created'], $note['updated']);
+		return sprintf($tpl, $note['title'], $this->buildNoteContent($note['content']), $note['created'], $note['updated']);
 	}
 
 	public function buildNoteContent($content){

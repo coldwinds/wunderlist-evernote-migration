@@ -11,6 +11,7 @@ namespace Kaf\WunderlistToEvernoteMigration20140825;
 class Migrate extends Support{
 
 	public
+		$codePage,
 		$wunderlist,
 		$evernote;
 
@@ -62,6 +63,8 @@ class Migrate extends Support{
 	}
 
 	public function buildEvernoteData($wunderlistData){
+		$wunderlistData = $this->htmlSpecialChars($wunderlistData);
+
 		foreach($wunderlistData as $list){
 			$notes = array();
 			foreach((array) $list['tasks'] as $task){
@@ -89,7 +92,7 @@ class Migrate extends Support{
 		foreach($notebooks as $notebook){
 			$v = $e->buildEnex($notebook['notes']);
 			empty($notebook['notes']) or
-				$e->saveEnexAsFile(sprintf('%s-%s', mb_convert_encoding($notebook['title'], 'GBK', 'UTF8'), $notebook['id']), $e->buildEnex($notebook['notes']));
+				$e->saveEnexAsFile(sprintf('%s-%s', mb_convert_encoding($notebook['title'], $this->codePage, 'UTF8'), $notebook['id']), $e->buildEnex($notebook['notes']));
 		}
 	}
 

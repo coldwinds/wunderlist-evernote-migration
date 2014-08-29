@@ -1,4 +1,5 @@
 {
+	"name": "coldwinds/wunderlist-evernote-migration",
 	"require-dev": {
 		"raveren/kint": "dev-master",
 		"oodle/krumo": "dev-master"
